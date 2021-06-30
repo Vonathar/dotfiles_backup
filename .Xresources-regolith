@@ -34,10 +34,10 @@ URxvt*background:   black
 URxvt*cursorColor:  red
 URxvt*borderColor:  black
 
-#define black #0b0c0f
+#define black #1D212A
 #define white #ffffff
 #define red #ff6666
-#define green #99ff99
+#define green #89e19c
 #define yellow #ffff66
 #define blue #99ccff
 #define magenta #ff3399
