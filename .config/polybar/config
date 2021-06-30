@@ -7,11 +7,12 @@ green = #89e19c
 yellow = #fbdf90
 
 [bar/top]
-width = 30%
-offset-x = 35%
+width = 26%
+offset-x = 37%
+offset-y = 3
 override-redirect = true
 height = 32
-radius = 10.0
+radius = 16.0
 fixed-center = true
 background = ${colors.black}
 foreground = ${colors.white}
@@ -19,14 +20,11 @@ foreground = ${colors.white}
 line-size = 3
 line-color = #f00
 
-
-padding-left = 0
-padding-right = 2
-module-margin-left = 1
+module-margin-left = 5
 module-margin-right = 4
 
 font-0 = Ubuntu:style=Regular:size=10;1
-font-1 = Material Design Icons:style=Regular:size=14;2
+font-1 = Material Design Icons:style=Regular:size=11;2
 font-2 = DejaVu Sans Mono:style=Regular:size=10;0
 
 modules-center = pulseaudio wlan battery date
@@ -40,54 +38,61 @@ cursor-scroll = ns-resize
 
 [bar/bottom]
 
+wm-restack = i3
+height = 32
+width = 44%
+offset-x = 28%
+offset-y = 3
+override-redirect = true
+
+radius = 16.0
+fixed-center = true
+
 background = ${colors.black}
 foreground = ${colors.white}
 
 bottom = true
-width = 100%
-height = 32
 
-font-0 = Ubuntu:style=Regular:size=10;1
-font-1 = Material Design Icons:style=Regular:size=15;1
-font-2 = DejaVu Sans Mono:style=Regular:size=12;0
+font-0 = Ubuntu:style=Regular:size=10;2
+font-1 = Material Design Icons:style=Regular:size=16;3
+font-2 = DejaVu Sans Mono:style=Regular:size=12;2
 
-spacing = 0
-padding-right = 2
-padding-left = 0
-module-margin-left = 0
-module-margin-right = 5
+spacing = 2
+module-margin-left = 7
+module-margin-right = 7
 
-modules-left = i3
-modules-right =  temperature memory cpu
+modules-center =  i3 temperature memory cpu
 
 [module/i3]
 type = internal/i3
-format = <label-state> <label-mode>
+format = <label-state><label-mode>
 index-sort = true
 
 ws-icon-0 = 1; 
 ws-icon-1 = 2; 
 ws-icon-2 = 3; 
+ws-icon-default = W
 
-label-mode-padding = 2
+label-mode-padding = 3
 label-mode-foreground = ${colors.white}
 label-mode-background = ${colors.black}
 
-label-focused = %icon%   %index%
-label-focused-padding = 2
+label-focused = %icon%  %index%
+label-focused-padding = 3
+label-focused-background = ${colors.green}
+label-focused-foreground = ${colors.black}
 label-focused-underline = ${colors.red}
-label-focused-foreground = "#ffffff"
 
-label-unfocused = %icon%   %index%
-label-unfocused-padding = 2
+label-unfocused = %icon%  %index%
+label-unfocused-padding = 3
 
-label-visible =  %icon%   %index%
+label-visible =  %icon%  %index%
 label-visible-background = ${colors.black}
-label-visible-padding = 2
+label-visible-padding = 3
 
-label-urgent =  %icon%   %index%
+label-urgent =  %icon%  %index%
 label-urgent-background = #5f5f5f
-label-urgent-padding = 2
+label-urgent-padding = 3
 
 [module/cpu]
 type = internal/cpu

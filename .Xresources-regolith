@@ -29,11 +29,6 @@ Xft*hinting: true
 Xft*hintstyle: hintfull
 Xft*rgba: rgb
 
-URxvt*foreground:   white
-URxvt*background:   black
-URxvt*cursorColor:  red
-URxvt*borderColor:  black
-
 #define black #1D212A
 #define white #ffffff
 #define red #ff6666
@@ -43,6 +38,10 @@ URxvt*borderColor:  black
 #define magenta #ff3399
 #define cyan #ff80ff
 
+URxvt*foreground:   white
+URxvt*background:   black
+URxvt*cursorColor:  red
+URxvt*borderColor:  black
 
 *.color0: black
 *.color8: black
