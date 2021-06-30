@@ -1,7 +1,7 @@
 #============================= Launch settings ===============================#
 # Applications to be launched when i3 starts
 #exec_always --no-startup-id tablet_mode
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 exec --no-startup-id xset +fp /home/gm/.local/share/fonts
 exec --no-startup-id xset fp rehash
 exec --no-startup-id /home/gm/.config/polybar/launch.sh

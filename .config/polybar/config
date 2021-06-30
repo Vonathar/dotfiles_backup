@@ -11,14 +11,14 @@ width = 30%
 offset-x = 35%
 override-redirect = true
 height = 32
-radius = 20.0
-
+radius = 10.0
+fixed-center = true
 background = ${colors.black}
 foreground = ${colors.white}
 
 line-size = 3
 line-color = #f00
-border-size = 0
+
 
 padding-left = 0
 padding-right = 2
