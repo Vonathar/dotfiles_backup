@@ -1,0 +1,67 @@
+ !!!!! Extensions !!!!!
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!!!!! Text !!!!!
+
+URxvt.font: xft:Inconsolata\-dz:style=Regular:size=12:antialias=true
+URxvt.boldFont: xft:Inconsolata\-dz:style=Bold:size=12:antialias=true
+URxvt.letterSpace: -1
+URxvt.lineSpace: 0
+URxvt.geometry: 90x30
+URxvt.internalBorder: 36
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+
+!!!!! Appearance !!!!!
+
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintfull
+Xft*rgba: rgb
+
+! special
+*.foreground:   #e3e3e3
+*.background:   #1d212a
+*.cursorColor:  #e3e3e3
+
+! black
+*.color0:       #1d212a
+*.color8:       #585e74
+
+! red
+*.color1:       #fc8993
+*.color9:       #fb9199
+
+! green
+*.color2:       #89e19c
+*.color10:      #8de19f
+
+! yellow
+*.color3:       #fbdf90
+*.color11:      #ffe28e
+
+! blue
+*.color4:       #a7bdfb
+*.color12:      #afc3fb
+
+! magenta
+*.color5:       #d990cd
+*.color13:      #df95d3
+
+! cyan
+*.color6:       #81d4ee
+*.color14:      #81d4ee
+
+! white
+*.color7:       #e3e3e3
+*.color15:      #e3e3e3

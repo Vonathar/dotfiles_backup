@@ -1,4 +1,4 @@
-!!!!! Extensions !!!!!
+ !!!!! Extensions !!!!!
 
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
@@ -23,36 +23,54 @@ URxvt.depth: 24
 
 !!!!! Appearance !!!!!
 
-Xft.dpi: 96
-Xft.antialias: true
-Xft.hinting: true
-Xft.rgba: rgb
-Xft.autohint: false
-Xft.hintstyle: hintslight
-Xft.lcdfilter: lcddefault
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintfull
+Xft*rgba: rgb
 
-URxvt*fading: 0
-URxvt*tintColor: #ffffff
-URxvt*shading: 0
-URxvt*inheritPixmap: False
+URxvt*foreground:   white
+URxvt*background:   black
+URxvt*cursorColor:  red
+URxvt*borderColor:  black
 
-! Atom One Light theme
-urxvt*background: #f9f9f9
-urxvt*foreground: #383a42
-urxvt*cursorColor: #d0d0d0
-urxvt*color0: #000000
-urxvt*color1: #E45649
-urxvt*color2: #50A14F
-urxvt*color3: #986801
-urxvt*color4: #4078F2
-urxvt*color5: #A626A4
-urxvt*color6: #0184BC
-urxvt*color7: #A0A1A7
-urxvt*color8: #5c6370
-urxvt*color9: #e06c75
-urxvt*color10: #50A14F
-urxvt*color11: #986801
-urxvt*color12: #4078F2
-urxvt*color13: #A626A4
-urxvt*color14: #0184BC
-urxvt*color15: #ffffff
+#define black #0b0c0f
+#define white #ffffff
+#define red #ff6666
+#define green #99ff99
+#define yellow #ffff66
+#define blue #99ccff
+#define magenta #ff3399
+#define cyan #ff80ff
+
+
+*.color0: black
+*.color8: black
+
+*.color1: red
+*.color9: red
+
+*.color2: green
+*.color10: green
+
+*.color3: yellow
+*.color11: yellow
+
+*.color4: blue
+*.color12: blue
+
+*.color5: magenta
+*.color13: magenta
+
+*.color6: cyan
+*.color14: cyan
+
+*.color7: white
+*.color15: white
+
+
+! Rofi colors.
+rofi.color-window: #2E3440, #2E3440, #A3BE8C
+rofi.color-normal: #2E3440, #ECEFF4, #2E3440, #A3BE8C, #2E3440
+rofi.color-active: #2E3440, #ECEFF4, #2E3440, #A3BE8C, #2E3440
+rofi.color-urgent: #2E3440, #BF616A, #2E3440, #BF616A, #ECEFF4
