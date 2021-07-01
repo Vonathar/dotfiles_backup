@@ -1,3 +1,14 @@
+!!!!! Colours !!!!!
+
+#define black #1D212A
+#define white #ffffff
+#define red #ff6666
+#define green #89e19c
+#define yellow #ffff66
+#define blue #99ccff
+#define magenta #ff3399
+#define cyan #ff80ff
+
  !!!!! Extensions !!!!!
 
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
@@ -28,15 +39,6 @@ Xft*antialias: true
 Xft*hinting: true
 Xft*hintstyle: hintfull
 Xft*rgba: rgb
-
-#define black #1D212A
-#define white #ffffff
-#define red #ff6666
-#define green #89e19c
-#define yellow #ffff66
-#define blue #99ccff
-#define magenta #ff3399
-#define cyan #ff80ff
 
 URxvt*foreground:   white
 URxvt*background:   black
