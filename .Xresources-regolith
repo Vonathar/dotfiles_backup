@@ -1,3 +1,6 @@
+gnome.gtk.theme: Yaru-light
+gnome.icon.theme: Yaru
+
 !!!!! Colours !!!!!
 
 #define black #1D212A
@@ -9,7 +12,7 @@
 #define magenta #ff3399
 #define cyan #ff80ff
 
- !!!!! Extensions !!!!!
+!!!!! Extensions !!!!!
 
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
@@ -18,11 +21,13 @@ URxvt.iso14755_52: false
 
 !!!!! Text !!!!!
 
-URxvt.font: xft:Inconsolata\-dz:style=Regular:size=12:antialias=true
-URxvt.boldFont: xft:Inconsolata\-dz:style=Bold:size=12:antialias=true
+!URxvt.font: xft:Iosevka Fixed:style=Regular:size=14:antialias=true
+URxvt.font: xft:Iosevka Fixed:style=Regular:size=14:antialias=true
+URxvt.boldFont: xft:Iosevka Fixed:style=Bold:size=14:antialias=true
+
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
-URxvt.geometry: 90x30
+URxvt.geometry: 120x30
 URxvt.internalBorder: 36
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: false
@@ -40,32 +45,43 @@ Xft*hinting: true
 Xft*hintstyle: hintfull
 Xft*rgba: rgb
 
-URxvt*foreground:   white
-URxvt*background:   black
-URxvt*cursorColor:  red
-URxvt*borderColor:  black
-
-*.color0: black
-*.color8: black
-
-*.color1: red
-*.color9: red
-
-*.color2: green
-*.color10: green
-
-*.color3: yellow
-*.color11: yellow
-
-*.color4: blue
-*.color12: blue
-
-*.color5: magenta
-*.color13: magenta
-
-*.color6: cyan
-*.color14: cyan
-
-*.color7: white
-*.color15: white
-
+*.foreground:  #5c6773
+*.background:  #fafafa
+*.cursorColor: #ff6a00
+!
+! Black
+*.color0:      #000000
+*.color8:      #323232
+!
+! Red
+*.color1:      #ff3333
+*.color9:      #ff6565
+!
+! Green
+*.color2:      #86b300
+*.color10:     #b8e532
+!
+! Yellow
+*.color3:      #f29718
+*.color11:     #ffc94a
+!
+! Blue
+*.color4:      #41a6d9
+*.color12:     #73d8ff
+!
+! Magenta
+*.color5:      #f07178
+*.color13:     #ffa3aa
+!
+! Cyan
+*.color6:      #4dbf99
+*.color14:     #7ff1cb
+!
+! White
+*.color7:      #ffffff
+*.color15:     #ffffff
+!
+! Bold, Italic, Underline
+*.colorBD:     #5c6773
+!*.colorIT:
+!*.colorUL:

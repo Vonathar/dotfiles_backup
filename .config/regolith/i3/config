@@ -13,36 +13,26 @@ exec --no-startup-id /home/gm/.config/regolith/i3/scripts/init.sh
 #================================= Appearance ================================#
 ################################ COLORS #######################################
 
-# TOGGLE GAPS
-bindsym $mod+g exec compton; gaps inner all set 0; gaps outer all set 0;
-bindsym $mod+Ctrl+g exec compton; gaps inner all set 10; gaps outer all set 20;
-
-##### i3-gaps ##############
 for_window [class=".*"] border pixel 0
 gaps inner 5
 gaps outer 0
 
-################# i3-radius #######################
 smart_borders on
 smart_borders no_gaps
 border_radius 2
-
 
 #-----------------------------------------------------------------------------#
 #=============================================================================#
 
 
 #================================= Controls ==================================#
-# Controls are mostly default i3 bindings
-# Mod4 = windows key, Mod1 = Alt
+# Super key
 set $mod Mod4
 
 #------------------------------- Applications --------------------------------#
 # Launch applications
 bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Shift+w exec --no-startup-id firefox
-
-bindsym Print exec "flameshot gui"
 
 # Bring up launcher
 bindsym $mod+d exec ~/.config/regolith/i3/scripts/launcher.sh
@@ -206,11 +196,7 @@ bindsym $mod+Shift+s exec $i3-wm.program.sleep
 #=============================================================================#
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $i3-wm.program.files i3-wm.program.files /usr/bin/nautilus --new-window
-bindsym $mod+Shift+n exec $i3-wm.program.files
-
-# bindsym $mod+e exec mpd_control.sh -j
-bindsym $mod+n exec --no-startup-id ncmpcpp2
-bindsym $mod+Shift+m exec --no-startup-id urxvt -hold -g 63x14 -e bash -c "ncmpcpp -c ~/.ncmpcpp/config-doble"
+bindsym $mod+n exec $i3-wm.program.files
 
 # i3-snapshot for load/save current layout
 ## Modify // Save Window Layout // <> , ##
@@ -229,7 +215,7 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
 for_window [class="feh"] floating enable
-
+for_window [class="com-caputo-imagelabeler-Application"] floating enable
 
 for_window [class="jetbrains-clion"] focus
 for_window [class="Fantasia"] floating enable
@@ -239,7 +225,7 @@ for_window [class="Fantasia"] floating enable
 
 for_window [window_role="browser"] move to workspace 1
 for_window [class=Firefox] move to workspace 1
-for_window [class=Code|jetbrains-webstorm|jetbrains-idea|jetbrains-clion] move to workspace 2
+for_window [class=Code|jetbrains-webstorm|jetbrains-idea|jetbrains-clion|jetbrains-pycharm] move to workspace 2
 for_window [class="Fantasia"] move to workspace 3
 for_window [class="Spotify"] move to workspace 4
 

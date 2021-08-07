@@ -199,22 +199,27 @@ animation-discharging-framerate = 1000
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
+thermal-zone = 6
+base-temperature = 50
+warn-temperature = 70
 
-format = <ramp>  <label>
-format-warn = <ramp>  <label-warn>
+format = <ramp><label>
+format-warn = <ramp><label-warn>
 
 label-active-font = 1
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-background = #dc143c
+ramp-warn-foreground = ${colors.red}
 label-warn-padding = 1
 
 ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
-ramp-foreground = ${colors.green}
+ramp-0-foreground = ${colors.green}
+ramp-1-foreground = ${colors.yellow}
+ramp-2-foreground = ${colors.red}
 format-padding = 1
 
 [module/pulseaudio]
